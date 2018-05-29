@@ -135,6 +135,7 @@ masters
 nodes
 nfs
 etcd
+glusterfs
 
 # Set variables common for all OSEv3 hosts
 [OSEv3:vars]
