@@ -134,6 +134,7 @@ cat > /etc/ansible/hosts <<EOF
 masters
 nodes
 nfs
+etcd
 
 # Set variables common for all OSEv3 hosts
 [OSEv3:vars]
@@ -209,6 +210,9 @@ openshift_master_logging_public_url=https://kibana.$ROUTING
 
 # host group for masters
 [masters]
+$MASTER-0.$DOMAIN
+
+[etcd]
 $MASTER-0.$DOMAIN
 
 [nfs]
